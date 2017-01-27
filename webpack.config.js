@@ -7,8 +7,9 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'build.js'
-  },
+  }, 
   module: {
+    
     rules: [
       {
         test: /\.vue$/,
@@ -38,6 +39,10 @@ module.exports = {
       }
     ]
   },
+   externals: {
+      vue: "Vue",
+      "vue-router": "VueRouter"
+    },
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.common.js'

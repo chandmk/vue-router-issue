@@ -1,5 +1,5 @@
 <template>
-  <div id="bar">
+  <div id="app">
      <h1>{{ msg }}</h1>   
     <router-link tag="button" :to="'/foo'">foo</router-link>
   </div>
@@ -10,7 +10,7 @@
 export default {
   data () {
     return {
-      msg: 'Welcome to Bar vue'
+      msg: 'Welcome to App'
     }
   }
 };
