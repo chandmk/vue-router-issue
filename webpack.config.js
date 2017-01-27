@@ -41,7 +41,7 @@ module.exports = {
   },
    externals: {
       vue: "Vue",
-      "vue-router": "VueRouter"
+    // "vue-router": "VueRouter"
     },
   resolve: {
     alias: {

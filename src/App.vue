@@ -1,18 +1,7 @@
 <template>
   <div id="app">
-     <h1>{{ msg }}</h1>   
-    <router-link tag="button" :to="'/foo'">foo</router-link>
+    <h1>{{this.$root.msg}}</h1>
+
+      <router-view></router-view>    
   </div>
 </template>
-
-
-<script>
-export default {
-  data () {
-    return {
-      msg: 'Welcome to App'
-    }
-  }
-};
-</script>
-

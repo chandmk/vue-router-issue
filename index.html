@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>vue-router-issue</title>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.0/vue-router.min.js"></script>-->
   </head>
   <body>
-    <div id="app">
-      <router-link to="/">Home</router-link>   
-      <router-link to="/foo">Foo</router-link>
-      <router-view></router-view>
-    </div>
+    <div id="app" />
+    <script>
+    var a = Vue.extend({
+        data: function() {
+          return {msg:"A view App"};
+        }
+      });
+      </script>
     <script src="/dist/build.js"></script>
   </body>
 </html>
